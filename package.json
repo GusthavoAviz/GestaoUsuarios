@@ -1,0 +1,13 @@
+{
+  "name": "gestao-acesso-fullstack",
+  "version": "1.0.0",
+  "description": "Sistema de Gestão de Acesso - .NET + React",
+  "scripts": {
+    "api:watch": "dotnet watch run --project src/API",
+    "front:dev": "cd frontend && npm run dev",
+    "dev": "concurrently \"npm run api:watch\" \"npm run front:dev\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
